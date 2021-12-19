@@ -7,7 +7,7 @@ fun main(){
     val input1 = readLine()!!
 
     val n = input1.split(' ')[0].toInt()
-    var l = input1.split(' ')[1].toInt()
+    val l = input1.split(' ')[1].toInt()
 
     var answer = ""
 
