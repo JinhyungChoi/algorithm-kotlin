@@ -23,7 +23,6 @@ fun main() {
             if (a == "" && emptyCount ==0) {
                 emptyCount = 1
                 list.removeAll(listOf(""))
-                println(list)
                 for (i in 0 until 8 - list.size) {
                     a = "0000"+a
                     if (i != 7-list.size) {
