@@ -1,6 +1,7 @@
 import java.io.BufferedReader
 import java.io.InputStreamReader
 
+// 최대 공약수
 fun main() {
     val br = BufferedReader(InputStreamReader(System.`in`))
 
