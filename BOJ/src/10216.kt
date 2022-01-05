@@ -27,7 +27,11 @@ fun main() {
                 }
             }
         }
-        println(parent.toSet().size)
+        val ans = mutableSetOf<Int>()
+        parent.forEach{
+            ans.add(getParent(parent, it))
+        }
+        println(ans.size)
     }
 }
 
@@ -42,19 +46,9 @@ fun union(parent: Array<Int>, value: Int, i: Int) {
     val a = getParent(parent, value)
     val b = getParent(parent, i)
     if (a <= b) {
-        parent[i] = a
-        find(parent,b,a)
+        parent[b] = a
     } else {
-        parent[value] = b
-        find(parent,a,b)
-    }
-}
-
-fun find(parent: Array<Int>, b: Int, a: Int) {
-    for (i in parent.indices){
-        if (parent[i] == b){
-            parent[i] = a
-        }
+        parent[a] = b
     }
 }
 
