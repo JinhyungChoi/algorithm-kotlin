@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BOJ/BOJ.iml" filepath="$PROJECT_DIR$/BOJ/BOJ.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/algorithm-kotlin.iml" filepath="$PROJECT_DIR$/.idea/algorithm-kotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/programmer/programmer.iml" filepath="$PROJECT_DIR$/programmer/programmer.iml" />
     </modules>
   </component>
 </project>
